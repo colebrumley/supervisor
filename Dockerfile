@@ -6,5 +6,6 @@ RUN yum -y install python-pip
 RUN mkdir -p /var/log/supervisor /etc/supervisor/conf.d
 RUN easy_install supervisor
 RUN pip install supervisor-stdout
+RUN pip install superlance
 ADD supervisor.conf /etc/supervisor.conf
 CMD ["supervisord", "-c", "/etc/supervisor.conf"]
