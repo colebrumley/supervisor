@@ -1,5 +1,5 @@
 FROM centos:latest
-MAINTAINER Cole Brumley "https://github.com/elcolio"
+MAINTAINER Cole Brumley "https://github.com/colebrumley"
 RUN yum -y install python-setuptools python-setuptools-devel wget
 RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm && rpm -ivh epel-release-7-2.noarch.rpm
 RUN yum -y install python-pip
